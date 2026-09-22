@@ -1,7 +1,7 @@
 // sw.js — 萬年曆離線快取。瀏覽器限制 Service Worker 只能在安全來源(https/localhost)註冊，
 // 用 file:// 直接開啟 index.html 時註冊會失敗，index.html 裡已經用 try/catch 吞掉這個失敗、
 // 不影響直接開檔案的主要用法；部署到靜態網站(如 GitHub Pages)時才會真的生效。
-const CACHE_NAME = 'almanac-v7';
+const CACHE_NAME = 'koi-almanac-v7';
 const CORE_ASSETS = [
   'index.html',
   'calendar-lexicon.js',
